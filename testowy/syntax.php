@@ -12,13 +12,13 @@
 
 <?php
 
-echo "Tu funkcja echo";
-echo "Tu"."funkcja"."echo";
-echo ('Tu funkcja echo');
-echo 'Tu'.'funkcja'.'echo';
+echo "Tu funkcja echo<br>";
+echo "Tu "."funkcja "."echo <br>";
+echo ('Tu funkcja echo<br>');
+echo 'Tu '.'funkcja '.'echo <br>';
 
-print('Zglasza'.'sie'.'funkcja'.'print');
-print "Zglasza"."sie"."funkcja"."print";
+print('Zglasza '.'sie '.'funkcja '.'print <br>');
+print "Zglasza "."sie "."funkcja "."print <br>";
 
 //echo "nijako";
 #echo "nijako";
@@ -29,8 +29,10 @@ print "Zglasza"."sie"."funkcja"."print";
 
 ?>
 
-<?= "Cole jest czarny" ?>
-<?= "Jump up,"."kick back,"."whip around"."and spin" ?>
+<hr>
+
+<?= "Cole jest czarny <br>" ?>
+<?= "Jump up, "."kick back, "."whip around "."and spin <br>" ?>
 
 
 
