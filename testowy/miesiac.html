@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    .linia {
+      border-top-style: dotted;
+      border-bottom-style: dotted;
+      border-color: pink;
+    }
+    .linia2 {
+      border-top-style: dashed;
+      border-bottom-style: dashed;
+      border-color: pink;
+    }
+    h1 {
+    text-align: center;
+    }
+    h3{
+      text-align: center;
+    }
+
+    </style>
 </head>
-<body>
-    
+<body style="font-family: cursive; text-align: center">
+  <h1 style="border-top-style: dotted; border-color: pink; border-width: 4px; border-bottom-style: dotted;"></h1>
+  
+  <php></php>
+
+
 <?php
-$mies = rand(1,12);
+$mies = rand(1,15);
 
 switch($mies){
     case 1:
@@ -37,14 +60,6 @@ switch($mies){
 }
 
 ?>
-
-<hr>
-<h1><?=$mies?></h1>
-<hr>
-<h3><?=$typ?></h3>
-<hr>
-
-
 
 
 
