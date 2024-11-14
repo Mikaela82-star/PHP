@@ -1,0 +1,19 @@
+<?php
+
+$graf=[];
+
+$graf[1] = [2,3,4];
+$graf[2] = [3];
+$graf[3] = [5];
+$graf[4] = [5,1];
+$graf[5] = [];
+
+foreach($graf as $wezel=>$sciezki){
+	echo "$wezel: ";
+	foreach($sciezki as $w){
+		echo "$w, ";
+	}
+	echo "\n";
+}
+
+?>
