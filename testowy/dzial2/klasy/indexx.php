@@ -11,17 +11,16 @@
 <body>
 
 <?php
-$licz = new Arytmetyka(6,5);
-
+$licz = new Arytmetyka(0.005,0.002);
 ?>
 
-<ul>
-    <li>Suma liczb <?=$a,$b?> jest równa <?=suma($a,$b)?></li>
-    <li>Suma liczb <?=$a,$b?> jest równa <?=roznica($a,$b)?></li>
-    <li>Suma liczb <?=$a,$b?> jest równa <?=iloczyn($a,$b)?></li>
-    <li>Suma liczb <?=$a,$b?> jest równa <?=iloraz($a,$b)?></li>
-    <li>Suma liczb <?=$a,$b?> jest równa <?=reszta($a,$b)?></li>
-    <li>Suma liczb <?=$a,$b?> jest równa <?=potega($a,$b)?></li>
+<ul type="square" style= background-color:cyan>
+    <li>Suma liczb <strong><?=$licz->a," ",$licz->b?></strong> jest równa <strong><?=$licz->suma()?></strong></li>
+    <li>Suma liczb <strong><?=$licz->a," ",$licz->b?></strong> jest równa <strong><?=$licz->roznica()?></strong></li>
+    <li>Suma liczb <strong><?=$licz->a," ",$licz->b?></strong> jest równa <strong><?=$licz->iloczyn()?></strong></li>
+    <li>Suma liczb <strong><?=$licz->a," ",$licz->b?></strong> jest równa <strong><?=$licz->iloraz()?></strong></li>
+    <li>Suma liczb <strong><?=$licz->a," ",$licz->b?></strong> jest równa <strong><?=$licz->reszta()?></strong></li>
+    <li>Suma liczb <strong><?=$licz->a," ",$licz->b?></strong> jest równa <strong><?=$licz->potega()?></strong></li>
 </ul>
 
 </body>
