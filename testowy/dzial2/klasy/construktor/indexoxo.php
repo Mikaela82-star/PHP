@@ -41,10 +41,24 @@ include_once('okrag_sfera_kula.php');
         $klasa = new OkragSferaKula($temp);
     ?>
 
-    <tr> <td colspan=3>Promień kuli: r = <?=$temp?></td> </tr>
-    <tr> <td>Obwód</td> <td>Pole powierzchni</td> <td>Objętość</td></tr>
-    <tr> <td><i>L = 2&#8508;r</td> <td>P = 4&#8508;r<sup>2</sup></td> <td>V = &#8531; &#183; 4&#8508;r&#179;</td></i></tr>
-    <tr> <td><?=$klasa->obw()?></td> <td><?=$klasa->pole()?></td> <td><?=$klasa->obj()?></td> </tr>
+    <tr> 
+        <td colspan=3>Promień kuli: r = <?=$temp?></td> 
+    </tr>
+    <tr> 
+        <td>Obwód</td>
+        <td>Pole powierzchni</td>
+        <td>Objętość</td>
+    </tr>
+    <tr> 
+        <td><i>L = 2&#8508;r</i></td>
+        <td><i>P = 4&#8508;r<sup>2</sup></i></td> 
+        <td><i>V = &#8531; &#183; 4&#8508;r&#179;</i></td>
+    </tr>
+    <tr> 
+        <td><?=$klasa->obw()?></td> 
+        <td><?=$klasa->pole()?></td> 
+        <td><?=$klasa->obj()?></td> 
+    </tr>
 
 </table>
 </body>
