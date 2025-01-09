@@ -1,0 +1,39 @@
+<?php
+
+class Dlugopis {
+    private ?int $zywotnosc;
+    
+    public static int $przecietnaZywotnosc = 10;
+    public static int $przecietnaWielkoscDlugopisa = 23;
+    
+    public static function podajWytwornie(): string {
+        return "U dugo pissiarza";
+    } 
+    
+    public static function ileDniZostalo($tusz) {
+        return "Zostalo tyle:".($tusz / 3);
+    }
+    
+    public function __construct(int $podstawowaZywotnosc) {
+        $this->zywotnosc = $podstawowaZywotnosc;
+    }
+    
+    public function dejZywotnosc(): ?int {
+        return $this->zywotnosc;
+    }
+}
+
+echo Dlugopis::$przecietnaZywotnosc, "\n";
+
+$mojDlugopis = new Dlugopis(15);
+$dlugopisPorzyczonyJasia = new Dlugopis(21);
+
+echo "Moje:", $mojDlugopis->dejZywotnosc(), "\n";
+echo "Jasia tak jakby:", $dlugopisPorzyczonyJasia->dejZywotnosc(), "\n";
+
+echo Dlugopis::$przecietnaZywotnosc, "\n";
+echo Dlugopis::$przecietnaWielkoscDlugopisa, "\n";
+
+echo Dlugopis::podajWytwornie(), "\n";
+
+echo Dlugopis::ileDniZostalo($mojDlugopis->dejZywotnosc());
