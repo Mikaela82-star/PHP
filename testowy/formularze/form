@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $json="";
+    if($_SERWER['REQUEST_METHOD'] === 'POST'){
+        $json=file_get_consents("http://ip-api.com/json/". $_POST["ip"])
+
+    }
+    ?>
+
+    <div>
+        <legend>Sprawdź przybliżoną lokalizację adresu IP v. 4</legend>
+        <input type="">
+    </div>
+   
+</body>
+</html>
