@@ -1,0 +1,50 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+    $url = "https://opentdb.com/api.php?amount=1&category=21&difficulty=hard&type=multiple";
+    $file = file_get_contents($url);
+    $data = json_decode($file, true);
+
+    if($data["response_code"]==0){
+        $difficulty = $data['results'][0]['difficulty'];
+        $category = $data['results'][0]['category'];
+        $question = $data['results'][0]['question'];
+        $correctAnswer = $data['results'][0]['correct_answer'];
+        $answers = $data['results'][0]['incorrect_answers'];
+        $answers[] = $correctAnswer;
+        shuffle($answers)
+
+        $_SESSION["difficulty"] = $difficulty;
+        $_SESSION["category"] = $category;
+        $_SESSION["question"] = $question;
+        $_SESSION["correctAnswer"] = $correctAnswer;
+        $_SESSION["answers"] = $answers;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+    ?>
+</body>
+</html>
