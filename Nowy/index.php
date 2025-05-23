@@ -31,6 +31,7 @@ a:hover{
   width: 70%;
   padding: 10px;
   height: 100%;
+  text-align: center;
 }
 
 /* Clear floats after the columns */
